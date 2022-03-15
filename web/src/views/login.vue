@@ -18,7 +18,7 @@
         </div>
         <div class="operate">
           <div class="zhuce">
-              <el-button type="text">注册新账号</el-button>
+              <el-button type="text" @click="Toenroll">注册新账号</el-button>
           </div>
           <el-button type="text">忘记密码？</el-button>
         </div>
@@ -37,6 +37,11 @@ export default {
       },
     };
   },
+  methods:{
+      Toenroll(){
+         this.$router.push({path:'/enroll'}) 
+      }
+  }
 };
 </script>
 

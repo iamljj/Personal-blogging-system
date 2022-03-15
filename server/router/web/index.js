@@ -6,7 +6,12 @@ module.exports=app=>{
     const users=require('../../modules/users')
     router.post('/user',async(req,res)=>{
        const modul= await users.create(req.body) 
-       res(modul)
+       const Res={
+           code:200,
+           msg:'创建成功',
+           data:modul
+       }
+       res.send(Res)
     })
     app.use('/web/api',router)
 }
