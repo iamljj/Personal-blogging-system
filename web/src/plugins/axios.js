@@ -7,8 +7,8 @@ import axios from "axios";
 // axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
 let config = {
-  baseURL:'http://localhost:3000/web/api'
-  // timeout: 60 * 1000, // Timeout
+  baseURL:'http://localhost:3000/web/api',
+   timeout: 60 * 1000, // Timeout
   // withCredentials: true, // Check cross-site Access-Control
 };
 

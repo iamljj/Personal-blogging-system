@@ -80,7 +80,7 @@ export default {
       this.$refs.ruleForm.validate(async (valid) => {
         if (valid) {
           this.loading = true;
-          let res = await this.$http.post("/user", this.formLabelAlign);
+          let res = await this.$http.post("/rest/users", this.formLabelAlign);
           if (res.data.code == 200) {
             this.$message({
               message: res.data.msg,
